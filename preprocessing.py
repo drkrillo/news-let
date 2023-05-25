@@ -6,7 +6,7 @@ import tiktoken
 from PyPDF2 import PdfReader
 
 
-def extract_pdf_by_url(url):
+def extract(url):
     """
     Loads PDF's text in memory by creating a bytes object and populating it with the text.
     """
@@ -24,7 +24,7 @@ def extract_pdf_by_url(url):
     return pdf_text
 
 
-def break_up_text_to_chunks(
+def chop(
     text, 
     chunk_size=4000, 
     overlap=200,
