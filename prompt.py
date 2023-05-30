@@ -39,6 +39,7 @@ def summarize(chunks):
         """
         response = get_completion(prompt)
         chunks_summaries += response + "\n"
+        time.sleep(5)
 
     time.sleep(20)
 
